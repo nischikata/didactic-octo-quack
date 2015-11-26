@@ -1,1 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600,700);
+
+/** reset *************************************************************************************************************/
 * { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { background-color: #eee; font-family: 'Titillium Web', sans-serif; color: #222; padding: 15px; }
