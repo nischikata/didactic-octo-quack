@@ -1,1 +1,15 @@
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600,700);
+
+/** reset *************************************************************************************************************/
 * { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { background-color: #eee; font-family: 'Titillium Web', sans-serif; color: #222; padding: 15px; height: 100%; }
+
+.leftContainer { float: left; width: 25%; }
+.rightContainer { float: right; width: 73%; }
+
+.leftContainer h2, .rightContainer h2 { margin-bottom: 20px; }
+
+form>* { display: block; margin-bottom: 20px; }
+form>textarea { width: 100%; height: 100px; }
+form>input[type=submit] { padding: 6px 10px; }
