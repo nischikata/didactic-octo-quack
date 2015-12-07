@@ -23,10 +23,6 @@ $textapi = new AYLIEN\TextAPI(APPLICATION_ID, APPLICATION_KEY);
 
 $errortext;
 $language = "en";
-$negative = false;
-$positive = false;
-$neutral = false;
-$moody = false;
 $message;
 $image;
 $class;
@@ -95,7 +91,6 @@ if(isset($_POST['submit']) && (!empty($_POST['q1']) || !empty($_POST['q2']) || !
                 $message = "Congratulations. You appear to be in a good mood.";
                 $image = "img/happy.jpg";
             }
-            $positive = true;
             $class = "happy";
 
 
@@ -107,7 +102,6 @@ if(isset($_POST['submit']) && (!empty($_POST['q1']) || !empty($_POST['q2']) || !
                 $message = "Having a rough day, huh?";
                 $image = "img/rough.jpg";
             }
-            $negative = true;
             $class = "sad";
 
         } elseif ($negative_score >= 1 && $positive_score >= 1) {
@@ -116,24 +110,20 @@ if(isset($_POST['submit']) && (!empty($_POST['q1']) || !empty($_POST['q2']) || !
             } else {
                 $message = "You appear to be a little moody.";
             }
-            $moody = true;
             $class = "moody";
             $image = "img/moody.jpg";
 
         } elseif ($positive_score >= (count($sentiments) - 1)){
             $message = "You are generally in a good mood.";
-            $positive = true;
             $class = "good";
             $image = "img/good.jpg";
         }
         elseif ($negative_score >= (count($sentiments) - 1)){
             $message = "Your mood could use some improvement.";
-            $negative = true;
             $image = "img/grumpy.jpg";
             $class = "grumpy";
         } else {
             $message = "neutral";
-            $neutral = true;
             $image = "img/shopping.jpg";
             $class = "neutral";
         }
