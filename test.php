@@ -16,18 +16,19 @@ function call_api($endpoint, $parameters) {
     ));
     curl_setopt($ch, CURLOPT_POST, true);
     curl_setopt($ch, CURLOPT_POSTFIELDS, $parameters);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
     $response = curl_exec($ch);
     return json_decode($response);
 }
+
+
 
 $params = array('text' => 'John is a very good football player! Bet he sucks at playing the piano. Don\'t worry though, he does not even own a piano. Everything is ok. The sun is shining, the weather is great. I love my new pair of shoes.');
 $sentiment = call_api('sentiment', $params);
 $language = call_api('language', $params);
 
-echo sprintf("Sentiment: %s (%F)", $sentiment->polarity, $sentiment->polarity_confidence),
-PHP_EOL;
-echo sprintf("Language: %s (%F)", $language->lang, $language->confidence),
-PHP_EOL;
+echo sprintf("Sentiment: %s (%F)", $sentiment->polarity, $sentiment->polarity_confidence), PHP_EOL;
+echo sprintf("Language: %s (%F)", $language->lang, $language->confidence), PHP_EOL;
 ?>
 
 <!DOCTYPE html>
@@ -36,19 +37,20 @@ PHP_EOL;
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width">
     <title>Semantic Text Analysis</title>
-    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
     <script src="https://code.jquery.com/jquery-2.1.3.min.js" type="text/javascript"></script>
-    <script src="script.js" type="text/javascript"></script>
 </head>
+
 <body>
 <h1>*magic* Text Analysis</h1>
 <div class="leftContainer">
     <h2>Input</h2>
-    <form id="form">
+    <form id="form" method="post" action="">
         <textarea id="textInput" name="textInput"></textarea>
-        <input type="submit" value="analyse">
+        <input type="submit" value="analyse" onclick="analyse()">
     </form>
 </div>
+
 <div class="rightContainer">
     <h2>Output</h2>
     <div id="output">

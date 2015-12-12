@@ -1,0 +1,146 @@
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,700,600,300,200);
+
+/** reset *************************************************************************************************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: "Titillium Web", sans-serif !important;
+}
+
+#main {
+    background-color: #17202A;
+    color: #EAECEE;
+    padding-bottom: 50px;
+}
+
+#header {
+    background-color: #2C3E50;
+    margin: 0 -15px 0 -15px !important;
+    padding: 10px;
+}
+
+#header > h1 {
+    font-size: 2em;
+}
+
+#input_box {
+    margin-top: 20px;
+    text-align: center;
+    height: 200px;
+}
+
+#form label {
+    font-size: 1.3em !important;
+}
+
+#form textarea {
+    font-size: 1.2em !important;
+    height: 120px;
+}
+
+#maps_box {
+    background-color: #27AE60;
+}
+
+#maps > .map_container {
+    margin-top: 10px;
+}
+
+#maps > .map_container > div {
+    height: 200px;
+}
+
+#persons_box {
+    background-color: #8E44AD;
+}
+
+#persons > .person_container {
+    margin-top: 10px;
+}
+
+#originalText_box {
+    background-color: #C0392B;
+}
+
+#originalText {
+    margin-top: 10px;
+    font-weight: 200;
+    font-size: 1.2em;
+}
+
+#maps_box, #persons_box, #originalText_box {
+    width: 100%;
+    height: 200px;
+    padding: 30px;
+    margin-top: 20px;
+    font-size: 8em;
+    text-align: center;
+    overflow: hidden;
+}
+
+#persons_box > h3, #maps_box > h3, #originalText_box > h3 {
+    margin: 0;
+    font-family: "Titillium Web", sans-serif;
+}
+
+.person_container > div {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.person_container > div > img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+img.adaptHeight {
+    height: 100%;
+    width: auto;
+}
+
+img.adaptWidth {
+    width: 100%;
+    height: auto;
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .row {
+        margin: 0 10px 0 10px !important;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #maps_box, #persons_box, #originalText_box {
+        margin-top: 10px;
+    }
+
+    #maps, #persons, #input {
+        margin-top: 20px !important;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}

@@ -150,7 +150,7 @@ if(isset($_POST['submit']) && (!empty($_POST['q1']) || !empty($_POST['q2']) || !
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width">
     <title>Mood Analysis</title>
-    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
     <script src="https://code.jquery.com/jquery-2.1.3.min.js" type="text/javascript"></script>
 </head>
 <body>

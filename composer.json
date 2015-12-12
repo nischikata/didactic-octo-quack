@@ -1,5 +1,5 @@
 {
   "require": {
-  "aylien/textapi": "0.3.*"
+  "aylien/textapi": "0.5.*"
   }
 }

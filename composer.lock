@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a536f68ecba574fcb19f946930855a01",
-    "content-hash": "d7ff54bb8ffdd2e663c1176d2b5aa591",
+    "hash": "6c1406c9f019486c4206a3ff92347dec",
+    "content-hash": "4b6988f02090f94f556017cf4e8672d9",
     "packages": [
         {
             "name": "aylien/textapi",
-            "version": "v0.3.0",
+            "version": "v0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AYLIEN/aylien_textapi_php.git",
-                "reference": "c2c329b89fab7e185d6a4a4023dcb7b162248e2e"
+                "reference": "1cf13b8f770d148138ffc9bbb8379b3795aeefe7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AYLIEN/aylien_textapi_php/zipball/c2c329b89fab7e185d6a4a4023dcb7b162248e2e",
-                "reference": "c2c329b89fab7e185d6a4a4023dcb7b162248e2e",
+                "url": "https://api.github.com/repos/AYLIEN/aylien_textapi_php/zipball/1cf13b8f770d148138ffc9bbb8379b3795aeefe7",
+                "reference": "1cf13b8f770d148138ffc9bbb8379b3795aeefe7",
                 "shasum": ""
             },
             "require": {
@@ -45,7 +45,7 @@
             ],
             "description": "Client library for AYLIEN Text API",
             "homepage": "https://github.com/AYLIEN/aylien_textapi_php",
-            "time": "2015-02-18 12:40:15"
+            "time": "2015-09-17 13:15:11"
         }
     ],
     "packages-dev": [],
